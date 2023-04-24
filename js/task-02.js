@@ -11,6 +11,7 @@ const ingredientsList = document.getElementById("ingredients");
 
 const newEl = ingredients.map((el) => {
   const createdLi = document.createElement("li");
+
   createdLi.textContent = el;
 
   createdLi.classList.add("item");

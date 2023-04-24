@@ -8,7 +8,7 @@ function onFormSubmit(event) {
   const passwordInput = form.elements.password;
 
   if (!(emailInput.value.trim() && passwordInput.value.trim())) {
-    alert("Усі поля мають бути заповнені");
+    return alert("Усі поля мають бути заповнені");
   }
 
   const formData = {
@@ -17,5 +17,5 @@ function onFormSubmit(event) {
   };
   console.log(formData);
 
-  form.reset();
+  event.target.reset();
 }
